@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/layout_struk_konten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_marginTop="20dp"
+        android:elevation="4dp">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:src="@android:drawable/checkbox_on_background"
+            android:backgroundTint="#2E7D32"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="PEMBAYARAN BERHASIL"
+            android:textColor="#2E7D32"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="VIN COFFEE &amp; CAFE"
+            android:textColor="@color/primaryblue"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Rasa Premium, Ngopi Tiap Hari"
+            android:textSize="12sp"
+            android:textColor="@color/neutraldark_grey"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+            android:textColor="@color/neutralgrey"
+            android:gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No. Pesanan:" android:textStyle="bold"/>
+            <TextView android:id="@+id/tv_id_transaksi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#VIN98231" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pelanggan:"/>
+            <TextView android:id="@+id/tv_nama_pelanggan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Keysha" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+            android:textColor="@color/neutralgrey"
+            android:gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2x Cappucino Torabika" android:textColor="@color/neutralblack"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rp. 40.000" android:layout_alignParentEnd="true" android:textColor="@color/neutralblack"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1x Croissant Coklat" android:textColor="@color/neutralblack"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rp. 15.000" android:layout_alignParentEnd="true" android:textColor="@color/neutralblack"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+            android:textColor="@color/neutralgrey"
+            android:gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TOTAL BAYAR" android:textStyle="bold" android:textSize="16sp" android:textColor="@color/primaryblue"/>
+            <TextView android:id="@+id/tv_total_harga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rp. 55.000" android:layout_alignParentEnd="true" android:textStyle="bold" android:textSize="16sp" android:textColor="@color/primaryblue"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Terima Kasih, Selamat Menikmati Kopi Anda!"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/neutraldark_grey"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btn_download_png"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/primaryblue"
+            android:text="Download Struk (PNG)"
+            android:textColor="@color/neutralwhite"
+            app:cornerRadius="8dp" />
+
+        <Button
+            android:id="@+id/btn_kirim_wa"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#25D366"
+            android:text="Kirim Struk ke WhatsApp"
+            android:textColor="@color/neutralwhite"
+            app:cornerRadius="8dp" />
+
+        <Button
+            android:id="@+id/btn_kembali_home"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/neutralgrey"
+            android:text="Kembali ke Beranda"
+            android:textColor="@color/neutralblack"
+            app:cornerRadius="8dp" />
+    </LinearLayout>
+
+</RelativeLayout>

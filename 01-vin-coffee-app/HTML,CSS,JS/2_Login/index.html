@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Login - Selamat Datang</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="element-login">
+      <!-- Blue header banner with logo -->
+      <div class="rectangle" aria-hidden="true"></div>
+      <!-- Logo group -->
+      <div class="group" role="img" aria-label="Logo aplikasi kopi">
+        <img class="vector" src="img/vector.svg" alt="" />
+        <img class="vector-2" src="img/vector-2.svg" alt="" />
+        <img class="vector-3" src="img/image.svg" alt="" />
+      </div>
+      <!-- Welcome heading -->
+      <h1 class="text-wrapper">Selamat Datang!</h1>
+      <!-- Subtitle -->
+      <p class="div">Silahkan Masuk ke Akun Anda</p>
+      <!-- Login form -->
+      <form class="login-form" novalidate>
+        <!-- Email field -->
+        <div class="form-row">
+          <img class="ic-outline-email" src="img/ic-outline-email.svg" alt="" aria-hidden="true" />
+          <div class="input-field">
+            <label for="email" class="sr-only">Email</label>
+            <input
+              id="email"
+              class="masukkan-email"
+              placeholder="Masukkan Email"
+              type="email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+        </div>
+        <!-- Password field -->
+        <div class="form-row">
+          <img class="mdi-password-outline" src="img/mdi-password-outline.svg" alt="" aria-hidden="true" />
+          <div class="input-field-state">
+            <label for="password" class="sr-only">Password</label>
+            <input
+              id="password"
+              class="masukkan-password"
+              placeholder="Masukkan Password"
+              type="password"
+              name="password"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+        </div>
+        <!-- Submit button -->
+        <button class="button" type="submit">
+          <span class="text-wrapper-3">Masuk</span>
+        </button>
+        <!-- Secondary actions -->
+        <div class="form-links">
+          <a href="#" class="text-wrapper-5">Daftar sekarang</a>
+          <a href="#" class="text-wrapper-4">Lupa Password?</a>
+        </div>
+      </form>
+      <!-- Decorative pin icon (empty, decorative) -->
+      <div class="ri-map-pin-fill" aria-hidden="true"></div>
+    </main>
+  </body>
+</html>

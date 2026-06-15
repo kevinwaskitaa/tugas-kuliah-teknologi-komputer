@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neutralwhite"
+    tools:context=".KeranjangActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_keranjang"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/primaryblue">
+
+        <ImageView
+            android:id="@+id/btn_back_keranjang"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/back"
+            app:tint="@color/neutralwhite" />
+
+        <TextView
+            android:id="@+id/keranjang_saya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:text="Keranjang Saya"
+            android:textColor="@color/neutralwhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_keranjang"
+        android:layout_above="@id/bottom_bar_keranjang"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <RelativeLayout
+                android:id="@+id/pesanan_1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_chip_normal"
+                android:backgroundTint="#F5F5F5"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_produk_1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/kopi_home" />
+
+                <TextView
+                    android:id="@+id/title_produk_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_produk_1"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Torabika Latte"
+                    android:textColor="@color/neutralblack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/harga_produk_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_produk_1"
+                    android:layout_toEndOf="@id/img_produk_1"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Rp. 20.000"
+                    android:textColor="@color/neutraldark_grey"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/tabler_trash_1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/sampah" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/neutralwhite"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="4dp">
+
+                    <TextView
+                        android:id="@+id/tanda_minus_1"
+                        android:layout_width="24dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="@color/neutralwhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:background="@color/primaryblue"/>
+
+                    <TextView
+                        android:id="@+id/text_kuantitas_1"
+                        android:layout_width="32dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/neutralblack"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tanda_plus_1"
+                        android:layout_width="24dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="@color/neutralwhite"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@color/primaryblue"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pesanan_2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_chip_normal"
+                android:backgroundTint="#F5F5F5"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_produk_2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/kopi_home" />
+
+                <TextView
+                    android:id="@+id/title_produk_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_produk_2"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Torabika Latte"
+                    android:textColor="@color/neutralblack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/harga_produk_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_produk_2"
+                    android:layout_toEndOf="@id/img_produk_2"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Rp. 20.000"
+                    android:textColor="@color/neutraldark_grey"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/tabler_trash_2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/sampah" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/neutralwhite"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="4dp">
+
+                    <TextView
+                        android:id="@+id/tanda_minus_2"
+                        android:layout_width="24dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="@color/neutralwhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:background="@color/primaryblue"/>
+
+                    <TextView
+                        android:id="@+id/text_kuantitas_2"
+                        android:layout_width="32dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/neutralblack"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tanda_plus_2"
+                        android:layout_width="24dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="@color/neutralwhite"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@color/primaryblue"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pesanan_3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_chip_normal"
+                android:backgroundTint="#F5F5F5"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_produk_3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/kopi_home" />
+
+                <TextView
+                    android:id="@+id/title_produk_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_produk_3"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Torabika Latte"
+                    android:textColor="@color/neutralblack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/harga_produk_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_produk_3"
+                    android:layout_toEndOf="@id/img_produk_3"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Rp. 20.000"
+                    android:textColor="@color/neutraldark_grey"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/tabler_trash_3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/sampah" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/neutralwhite"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="4dp">
+
+                    <TextView
+                        android:id="@+id/tanda_minus_3"
+                        android:layout_width="24dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="@color/neutralwhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:background="@color/primaryblue"/>
+
+                    <TextView
+                        android:id="@+id/text_kuantitas_3"
+                        android:layout_width="32dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/neutralblack"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tanda_plus_3"
+                        android:layout_width="24dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="@color/neutralwhite"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@color/primaryblue"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/pesanan_4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_chip_normal"
+                android:backgroundTint="#F5F5F5"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_produk_4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/kopi_home" />
+
+                <TextView
+                    android:id="@+id/title_produk_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_produk_4"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Torabika Latte"
+                    android:textColor="@color/neutralblack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/harga_produk_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_produk_4"
+                    android:layout_toEndOf="@id/img_produk_4"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Rp. 20.000"
+                    android:textColor="@color/neutraldark_grey"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/tabler_trash_4"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/sampah" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/neutralwhite"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="4dp">
+
+                    <TextView
+                        android:id="@+id/tanda_minus_4"
+                        android:layout_width="24dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="@color/neutralwhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:background="@color/primaryblue"/>
+
+                    <TextView
+                        android:id="@+id/text_kuantitas_4"
+                        android:layout_width="32dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/neutralblack"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tanda_plus_4"
+                        android:layout_width="24dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="@color/neutralwhite"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@color/primaryblue"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_keranjang"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/neutralwhite"
+        android:elevation="16dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Menggunakan teks langsung dengan simbol centang sesuai gambar -->
+            <TextView
+                android:id="@+id/tv_status_voucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✓ Voucher Berhasil Dipasang"
+                android:textColor="#2E7D32"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textColor="@color/neutralblack"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_total_pembayaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Rp 108.000"
+                android:textColor="@color/neutralblack"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_konfirmasi_pesanan"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:backgroundTint="@color/primaryblue"
+            android:text="Konfirmasi Pesanan"
+            android:textAllCaps="false"
+            android:textColor="@color/neutralwhite"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="12dp" />
+    </LinearLayout>
+
+</RelativeLayout>
